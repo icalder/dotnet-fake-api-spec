@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tsp-output", "tsp-output", "{DC5C6841-B8B8-EB7E-EF86-1F6060D2299A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{1567C8E2-9117-42CF-8574-D8C3BED342CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceProject", "tsp-output\server\aspnet\ServiceProject.csproj", "{FDF2F2DA-CCC4-D0E7-75CD-29C8176BEBEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDF2F2DA-CCC4-D0E7-75CD-29C8176BEBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF2F2DA-CCC4-D0E7-75CD-29C8176BEBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF2F2DA-CCC4-D0E7-75CD-29C8176BEBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF2F2DA-CCC4-D0E7-75CD-29C8176BEBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1567C8E2-9117-42CF-8574-D8C3BED342CD} = {DC5C6841-B8B8-EB7E-EF86-1F6060D2299A}
+		{FDF2F2DA-CCC4-D0E7-75CD-29C8176BEBEB} = {1567C8E2-9117-42CF-8574-D8C3BED342CD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3602BACD-E237-42F6-B1E4-441761FB123C}
+	EndGlobalSection
+EndGlobal

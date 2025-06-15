@@ -5,6 +5,7 @@ using Http;
 namespace DemoService;
 
 model Widget {
+  @visibility(Lifecycle.Read)
   id: string;
   weight: int32;
   color: "red" | "blue";
@@ -29,8 +30,8 @@ model AnalyzeResult {
 @tag("Widgets")
 interface Widgets {
   /** List widgets */
-  //@get list(@query color?: "red" | "blue"): WidgetList | Error;
-  @get list(): WidgetList | Error;
+  @get list(@query color?: "red" | "blue"): WidgetList | Error;
+  //@get list(): WidgetList | Error;
   /** Read widgets */
   @get read(@path id: string): Widget | Error;
   /** Create a widget */

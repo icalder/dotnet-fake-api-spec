@@ -24,7 +24,7 @@ interface Websites {
   @get read(@path id: string): Website | (NotFoundResponse & Error) | Error;
 
   /** Create a website */
-  @post create(@body body: Website): (CreatedResponse & Website) | Error;
+  @post create(@body body: OmitProperties<Website, "id">): (CreatedResponse & Website) | Error;
 
   /** Update a website */
   @patch update(

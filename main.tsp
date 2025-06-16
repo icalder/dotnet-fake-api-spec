@@ -38,7 +38,7 @@ interface Widgets {
   /** Read widgets */
   @get read(@path id: string): Widget | (NotFoundResponse & Error) | Error;
   /** Create a widget */
-  @post create(@body body: Widget): (CreatedResponse & Widget) | Error;
+  @post create(@body body: OmitProperties<Widget, "id">): (CreatedResponse & Widget) | Error;
   /** Update a widget */
   @patch update(
     @path id: string,

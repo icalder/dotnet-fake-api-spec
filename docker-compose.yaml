@@ -1,0 +1,19 @@
+services:
+  openapi-generator:
+    image: openapitools/openapi-generator-cli:v7.13.0
+    volumes:
+      - ".:/local"
+    command:
+      - generate
+      - -i
+      - /local/tsp-output/schema/openapi.yaml
+      - -g
+      - aspnetcore
+      - -o
+      - /local/openapi-generator
+      - --additional-properties
+      - buildTarget=library,operationIsAsync=true,operationResultTask=true,useSwashbuckle=false,useNewtonsoft=false,packageName=FakeApiSpec,modelClassModifier=partial,nullableReferenceTypes=true,enumValueSuffix=
+
+    user: 1000:1000
+    profiles:
+      - ondemand

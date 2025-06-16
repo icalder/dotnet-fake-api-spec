@@ -11,9 +11,7 @@ tsp compile .
 See also:
 [text](https://typespec.io/docs/getting-started/code-generation-csharp/#2-creating-a-typespec-project)
 
-## Running
-```powershell
-dotnet watch --project tsp-output/server/aspnet
-dotnet run --project tsp-output/server/aspnet
-dotnet run --project tsp-output/server/aspnet --launch-profile http
+## Openapi Generator
+```bash
+docker compose run --rm openapi-generator
 ```

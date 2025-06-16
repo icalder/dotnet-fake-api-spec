@@ -492,3 +492,6 @@ dist/
 
 # Dependency directories
 node_modules/
+
+# Openapi Generator output
+openapi-generator/
